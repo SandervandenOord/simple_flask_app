@@ -10,6 +10,7 @@ def index(name='Sander'):
     return render_template('index.html', name=name)
 
 
+# with the <datatype:varname> you can make sure you get the right data type
 @app.route('/add/<int:num1>/<int:num2>')
 def add(num1, num2):
     return render_template('add.html', num1=num1, num2=num2)
