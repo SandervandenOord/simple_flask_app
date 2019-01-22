@@ -1,0 +1,11 @@
+<!-- This uses the template base.html and extends the blocks -->
+{% extends 'base.html' %}
+
+<!-- Use {{ super() }} to get text from parent block -->
+{% block title %} {{ super() }} | Adding like crazy {% endblock %}
+
+{% block content %}
+    <h1>
+        {{ num1 }} + {{ num2 }} = {{ num1 + num2 }}
+    </h1>
+{% endblock %}
